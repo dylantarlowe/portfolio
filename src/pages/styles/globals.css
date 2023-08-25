@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-text: theme('colors.green');
+  }
+  
+  [data-theme='yellow'] {
+    --primary-text: theme('colors.yellow');
+  }
+  [data-theme='orange'] {
+    --primary-text: theme('colors.orange');
+  }
+  [data-theme='cyan'] {
+    --primary-text: theme('colors.cyan');
+  }
+  [data-theme='grayMain'] {
+    --primary-text: theme('colors.grayMain');
+  }
+  [data-theme='blue'] {
+    --primary-text: theme('colors.blue');
+  }
+  [data-theme='red'] {
+      --primary-text: theme('colors.red');
+  }
+  [data-theme='pink'] {
+      --primary-text: theme('colors.pink');
+  }
+
+  
