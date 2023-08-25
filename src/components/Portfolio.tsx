@@ -133,5 +133,6 @@ const Portfolio = forwardRef<HTMLDivElement>((props, ref) => {
     </div>
   );
 });
+Portfolio.displayName = "Portfolio";
 
 export default Portfolio;
