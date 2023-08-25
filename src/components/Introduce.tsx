@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Home, ArrowDown, MoveDown } from "lucide-react";
 import Image from "next/image";
-import MyProjects from "../Images/myprojects.svg";
+import MyProjects from "../images/myprojects.svg";
 import { motion } from "framer-motion";
 import {
   leftShiftAnimation,
