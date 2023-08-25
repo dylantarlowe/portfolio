@@ -15,7 +15,7 @@ import resQ from "../images/resQ.svg";
 
 type Props = {};
 
-const Portfolio = forwardRef<HTMLDivElement>((props, ref) => {
+const Portfolio = forwardRef<HTMLDivElement>(function Portfolio(props, ref) {
   const projects = [
     {
       name: "Perch",
@@ -133,7 +133,5 @@ const Portfolio = forwardRef<HTMLDivElement>((props, ref) => {
     </div>
   );
 });
-
-Portfolio.displayName = "Portfolio";
 
 export default Portfolio;
