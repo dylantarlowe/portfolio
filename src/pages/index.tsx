@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 type Props = {};
 
-const index = (props: Props) => {
+const Index = (props: Props) => {
   const [showThemeChange, setShowThemeChange] = useState(false);
 
   return (
@@ -23,4 +23,4 @@ const index = (props: Props) => {
   );
 };
 
-export default index;
+export default Index;

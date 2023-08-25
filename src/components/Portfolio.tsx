@@ -89,6 +89,7 @@ const Portfolio = forwardRef<HTMLDivElement>((props, ref) => {
             whileInView="whileInView"
             transition={{ duration: 1 }}
             viewport={{ once: true }}
+            key={key}
             variants={
               key % 3 === 0
                 ? upAnimation
@@ -113,8 +114,11 @@ const Portfolio = forwardRef<HTMLDivElement>((props, ref) => {
                 width={300}
               />
               <div className="flex w-full space-x-3 justify-start">
-                {project.stack.map((tech) => (
-                  <div className="group-hover:bg-black group-hover:text-gray-200 bg-white text-gray-700 rounded-full px-5 py-2 text-center">
+                {project.stack.map((tech, key) => (
+                  <div
+                    key={key}
+                    className="group-hover:bg-black group-hover:text-gray-200 bg-white text-gray-700 rounded-full px-5 py-2 text-center"
+                  >
                     {tech}
                   </div>
                 ))}

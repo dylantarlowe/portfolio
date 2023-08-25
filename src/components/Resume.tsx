@@ -82,6 +82,7 @@ const Resume = (props: Props) => {
             transition={{ duration: 1 }}
             variants={leftShiftAnimation}
             viewport={{ once: true }}
+            key={index}
             onClick={() => setSelected(index)}
           >
             <div className="flex space-x-12 md:space-x-20">
@@ -108,8 +109,8 @@ const Resume = (props: Props) => {
                 >
                   {exp.year}
                 </p>
-                {exp.roles.map((role) => (
-                  <div className="flex flex-col space-y-1">
+                {exp.roles.map((role, key) => (
+                  <div key={key} className="flex flex-col space-y-1">
                     <p className="text-2xl font-light">{role.title} </p>
                     <p className=" text-gray-400 font-light">{role.company}</p>
                     {role.details && (

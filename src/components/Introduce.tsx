@@ -46,8 +46,9 @@ const Introduce = (props: Props) => {
         viewport={{ once: true }}
         className="text-sm md:text-base text-gray-400 leading-relaxed font-light"
       >
-        It's all about keeping things beautifully simple. I'm dedicated to
-        crafting sleek and intuitive solutions that I'm truly passionate about.
+        It&apos;s all about keeping things beautifully simple. I&apos;m
+        dedicated to crafting sleek and intuitive solutions that I&apos;m truly
+        passionate about.
       </motion.p>
       <motion.div
         initial="initial"

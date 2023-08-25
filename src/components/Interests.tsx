@@ -73,6 +73,7 @@ const Interests = (props: Props) => {
             whileInView="whileInView"
             transition={{ duration: 0.25, delay: key * 0.1 }}
             variants={upAnimation}
+            key={key}
             viewport={{ once: true }}
             className="hover:border-th-primary-text hover:text-th-primary-text flex justify-center items-center px-4 py-2 border border-solid border-gray-500 rounded-full"
           >

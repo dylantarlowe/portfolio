@@ -38,13 +38,14 @@ const About = (props: Props) => {
         viewport={{ once: true }}
         className=" text-gray-400 leading-relaxed font-light"
       >
-        I'm a problem-solving enthusiast, and coding is my avenue for turning
-        ideas into reality. With startups like Perch, revolutionizing event
-        parking, and Hatch, connecting college entrepreneurs and investors, I've
-        experienced the transformative power of a single developer firsthand.
-        Armed with hands-on experience from Amazon, my startups, and various
-        side projects, I'm committed to finding technical solutions for any
-        challenge. Let's chat if you have questions or simply want to connect!
+        I&apos;m a problem-solving enthusiast, and coding is my avenue for
+        turning ideas into reality. With startups like Perch, revolutionizing
+        event parking, and Hatch, connecting college entrepreneurs and
+        investors, I&apos;ve experienced the transformative power of a single
+        developer firsthand. Armed with hands-on experience from Amazon, my
+        startups, and various side projects, I&apos;m committed to finding
+        technical solutions for any challenge. Let&apos;s chat if you have
+        questions or simply want to connect!
       </motion.p>
     </div>
   );
