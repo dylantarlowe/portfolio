@@ -29,7 +29,7 @@ const Sidebar = (props: Props) => {
       viewport={{ once: true }}
       className="flex w-full lg:w-[400px] h-auto lg:h-screen lg:items-center md:justify-center p-4 md:p-6 lg:py-2 static lg:fixed"
     >
-      <div className="flex flex-col relative w-full md:w-2/3 lg:w-full lg:min-h-[560px] space-y-7 lg:justify-stretch lg:space-y-5 items-center p-5 lg:px-6 pt-1 border rounded-2xl border-solid border-neutral-700 ">
+      <div className="flex flex-col relative w-full md:w-2/3 lg:w-full lg:min-h-[560px] space-y-7 lg:justify-stretch lg:space-y-4 items-center p-5 lg:px-6 pt-1 border rounded-2xl border-solid border-neutral-700 ">
         <div
           onClick={() => props.setShowThemeChange(true)}
           className="absolute top-6 animate-spin-slow -left-[14.5px] bg-primary text-neutral-500 p-1 cursor-pointer rounded-full"
