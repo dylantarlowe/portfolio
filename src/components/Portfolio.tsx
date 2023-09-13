@@ -67,7 +67,7 @@ const Portfolio = forwardRef<HTMLDivElement>(function Portfolio(props, ref) {
         transition={{ duration: 0.25 }}
         variants={upAnimation}
         viewport={{ once: true }}
-        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-gray-600"
+        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-neutral-600"
       >
         <SquareStack color="white" size={10} />
         <p className="text-xs font-light ">PORTFOLIO</p>
@@ -117,16 +117,14 @@ const Portfolio = forwardRef<HTMLDivElement>(function Portfolio(props, ref) {
                 {project.stack.map((tech, key) => (
                   <div
                     key={key}
-                    className="group-hover:bg-black group-hover:text-gray-200 bg-white text-gray-700 rounded-full px-5 py-2 text-center"
+                    className="group-hover:bg-black group-hover:text-neutral-200 bg-white text-neutral-700 rounded-full px-5 py-2 text-center"
                   >
                     {tech}
                   </div>
                 ))}
               </div>
             </div>
-            <p className="text-2xl font-light group-hover:lg:underline">
-              {project.name}
-            </p>
+            <p className="text-2xl font-light">{project.name}</p>
           </motion.div>
         ))}
       </div>

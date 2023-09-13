@@ -27,12 +27,12 @@ const Sidebar = (props: Props) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75 }}
       viewport={{ once: true }}
-      className="flex w-full xl:w-1/3 h-auto xl:h-screen xl:items-center md:justify-center p-4 md:p-6 xl:py-2 static xl:fixed"
+      className="flex w-full lg:w-[400px] h-auto lg:h-screen lg:items-center md:justify-center p-4 md:p-6 lg:py-2 static lg:fixed"
     >
-      <div className="flex flex-col relative w-full md:w-2/3 xl:w-full xl:max-h-full xl:min-h-[540px] space-y-7 xl:justify-stretch xl:space-y-4 items-center p-5 xl:px-6 pt-1 border rounded-2xl border-solid border-gray-600 ">
+      <div className="flex flex-col relative w-full md:w-2/3 lg:w-full lg:min-h-[560px] space-y-7 lg:justify-stretch lg:space-y-5 items-center p-5 lg:px-6 pt-1 border rounded-2xl border-solid border-neutral-700 ">
         <div
           onClick={() => props.setShowThemeChange(true)}
-          className="absolute top-6 animate-spin-slow -left-[14.5px] bg-primary text-gray-500 p-1 cursor-pointer rounded-full"
+          className="absolute top-6 animate-spin-slow -left-[14.5px] bg-primary text-neutral-500 p-1 cursor-pointer rounded-full"
         >
           <Settings size={20} />
         </div>
@@ -47,7 +47,7 @@ const Sidebar = (props: Props) => {
         <Image
           src={meBW}
           alt="me"
-          className="max-w-[290px] w-3/4 rounded-3xl"
+          className="max-w-[290px] lg:min-w-[250px] w-3/4 rounded-3xl"
         />
         <div>
           <p className="text-white text-center text-2xl md:text-xl font-light pb-1">
@@ -57,7 +57,7 @@ const Sidebar = (props: Props) => {
             Based in New York, NY
           </p>
         </div>
-        <p className="text-sm text-gray-400">
+        <p className="text-sm text-neutral-400">
           &copy; 2023 Dylan. All Rights Reserved
         </p>
         <div className="flex space-x-4">
@@ -65,28 +65,28 @@ const Sidebar = (props: Props) => {
             onClick={() =>
               openInNewTab("https://linkedin.com/in/dylantarlowe/")
             }
-            className="flex justify-center items-center rounded-full border-2 border-gray-500 w-12 h-12 cursor-pointer"
+            className="flex justify-center items-center rounded-full border-2 border-neutral-600 w-12 h-12 cursor-pointer"
           >
-            <Linkedin className="text-gray-300" size={16} />
+            <Linkedin className="text-neutral-300" size={16} />
           </div>
           <div
             onClick={() => openInNewTab("https://github.com/dylantarlowe/")}
-            className="flex justify-center items-center rounded-full border-2 border-gray-500 w-12 h-12 cursor-pointer"
+            className="flex justify-center items-center rounded-full border-2 border-neutral-600 w-12 h-12 cursor-pointer"
           >
-            <Github className="text-gray-300" size={16} />
+            <Github className="text-neutral-300" size={16} />
           </div>
           <a
             href="/Resume.pdf"
             target="_blank"
-            className="flex justify-center items-center rounded-full border-2 border-gray-500 w-12 h-12 cursor-pointer"
+            className="flex justify-center items-center rounded-full border-2 border-neutral-600 w-12 h-12 cursor-pointer"
           >
-            <FileBadge className="text-gray-300" size={16} />
+            <FileBadge className="text-neutral-300" size={16} />
           </a>
           <div
             onClick={() => openInNewTab("https://leetcode.com/dylantarlowe/")}
-            className="flex justify-center items-center rounded-full border-2 border-gray-500 w-12 h-12 cursor-pointer"
+            className="flex justify-center items-center rounded-full border-2 border-neutral-600 w-12 h-12 cursor-pointer"
           >
-            <Code2 className="text-gray-300" size={16} />
+            <Code2 className="text-neutral-300" size={16} />
           </div>
         </div>
         <button

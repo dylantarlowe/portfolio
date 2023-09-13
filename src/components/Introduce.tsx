@@ -22,7 +22,7 @@ const Introduce = (props: Props) => {
         transition={{ duration: 0.25 }}
         variants={upAnimation}
         viewport={{ once: true }}
-        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-gray-600"
+        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-neutral-600"
       >
         <Home color="white" size={10} />
         <p className="text-xs font-light ">INTRODUCE</p>
@@ -44,7 +44,7 @@ const Introduce = (props: Props) => {
         transition={{ duration: 0.4 }}
         variants={upAnimation}
         viewport={{ once: true }}
-        className="text-sm md:text-base text-gray-400 leading-relaxed font-light"
+        className="text-sm md:text-base text-neutral-400 leading-relaxed font-light"
       >
         It&apos;s all about keeping things beautifully simple. I&apos;m
         dedicated to crafting sleek and intuitive solutions that I&apos;m truly
@@ -57,7 +57,7 @@ const Introduce = (props: Props) => {
         variants={upAnimation}
         viewport={{ once: true }}
         onClick={props.scroll}
-        className="sm:self-end self-start cursor-pointer relative flex justify-center items-center w-fit h-auto p-3 rounded-full border border-gray-700 border-solid"
+        className="sm:self-end self-start cursor-pointer relative flex justify-center items-center w-fit h-auto p-3 rounded-full border border-neutral-700 border-solid"
       >
         <Image
           className="animate-spin-slow"
@@ -80,7 +80,7 @@ const Introduce = (props: Props) => {
           <p className="text-5xl md:text-7xl font-light text-th-primary-text">
             3+
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-neutral-500">
             YEARS OF <br /> EXPERIENCE
           </p>
         </motion.div>
@@ -95,7 +95,7 @@ const Introduce = (props: Props) => {
           <p className="text-5xl md:text-7xl font-light text-th-primary-text">
             15+
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-neutral-500">
             PROJECTS <br /> COMPLETED
           </p>
         </motion.div>

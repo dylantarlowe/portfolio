@@ -17,8 +17,8 @@ const Content = (props: Props) => {
   };
 
   return (
-    <div className="w-screen flex justify-center items-center xl:w-3/4 text-gray-50 py-6">
-      <div className="flex flex-col justify-center xl:w-11/12 md:w-3/5 w-11/12 space-y-24 pb-16 xl:pt-12 xl:pr-14">
+    <div className="w-screen flex justify-center items-center lg:w-3/4 text-neutral-50 py-6">
+      <div className="flex flex-col justify-center lg:w-10/12 md:w-3/5 w-11/12 space-y-24 pb-16 lg:pt-12 lg:pr-14">
         <Introduce scroll={scroll} />
         <About />
         <Portfolio ref={ref} />

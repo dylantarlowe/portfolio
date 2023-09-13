@@ -35,7 +35,7 @@ const Skills = (props: Props) => {
         transition={{ duration: 0.25 }}
         variants={upAnimation}
         viewport={{ once: true }}
-        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-gray-600"
+        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-neutral-600"
       >
         <Shapes color="white" size={10} />
         <p className="text-xs font-light">MY&nbsp;SKILLS</p>
@@ -61,7 +61,7 @@ const Skills = (props: Props) => {
             variants={upAnimation}
             key={key}
             viewport={{ once: true }}
-            className="hover:border-th-primary-text hover:text-th-primary-text flex justify-center items-center px-4 py-2 border border-solid border-gray-500 rounded-full"
+            className="hover:border-th-primary-text hover:text-th-primary-text hover:transition-color flex justify-center items-center px-4 py-2 border border-solid border-neutral-500 rounded-full"
           >
             <p className="font-extralight">{skill}</p>
           </motion.div>
@@ -71,16 +71,16 @@ const Skills = (props: Props) => {
       {/* <div className="flex flex-col">
         <div className="flex w-full space-x-4">
           <div className="flex-1 flex-col flex space-y-3 justify-center items-center">
-            <div className="w-full flex justify-center items-center border border-solid rounded-full h-56 border-gray-500">
+            <div className="w-full flex justify-center items-center border border-solid rounded-full h-56 border-neutral-500">
               <p className="text-2xl font-light">left</p>
             </div>
-            <p className="text-lg text-gray-200">Figma</p>
+            <p className="text-lg text-neutral-200">Figma</p>
           </div>
           <div className="flex-1 flex-col flex space-y-3 justify-center items-center">
-            <div className="w-full flex justify-center items-center border border-solid rounded-full h-56 border-gray-500">
+            <div className="w-full flex justify-center items-center border border-solid rounded-full h-56 border-neutral-500">
               <p className="text-2xl font-light">right</p>
             </div>
-            <p className="text-lg text-gray-200">Figma</p>
+            <p className="text-lg text-neutral-200">Figma</p>
           </div>
         </div>
       </div> */}

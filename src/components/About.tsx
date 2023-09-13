@@ -14,7 +14,7 @@ const About = (props: Props) => {
         transition={{ duration: 0.25 }}
         variants={upAnimation}
         viewport={{ once: true }}
-        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-gray-600"
+        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-neutral-600"
       >
         <User2 color="white" size={10} />
         <p className="text-xs font-light ">ABOUT</p>
@@ -36,7 +36,7 @@ const About = (props: Props) => {
         transition={{ duration: 0.4 }}
         variants={upAnimation}
         viewport={{ once: true }}
-        className=" text-gray-400 leading-relaxed font-light"
+        className=" text-neutral-400 leading-relaxed font-light"
       >
         I&apos;m a problem-solving enthusiast, and coding is my avenue for
         turning ideas into reality. With startups like Perch, revolutionizing

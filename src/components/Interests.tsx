@@ -49,7 +49,7 @@ const Interests = (props: Props) => {
         transition={{ duration: 0.25 }}
         variants={upAnimation}
         viewport={{ once: true }}
-        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-gray-600"
+        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-neutral-600"
       >
         <PartyPopper color="white" size={10} />
         <p className="text-xs font-light">FOR&nbsp;FUN</p>
@@ -75,7 +75,7 @@ const Interests = (props: Props) => {
             variants={upAnimation}
             key={key}
             viewport={{ once: true }}
-            className="hover:border-th-primary-text hover:text-th-primary-text flex justify-center items-center px-4 py-2 border border-solid border-gray-500 rounded-full"
+            className="hover:border-th-primary-text hover:text-th-primary-text  hover:transition-color flex justify-center items-center px-4 py-2 border border-solid border-neutral-500 rounded-full"
           >
             <p className="font-extralight">
               {hobbie.emoji}&nbsp;&nbsp;{hobbie.name}&nbsp;

@@ -6,8 +6,6 @@ import { Briefcase } from "lucide-react";
 type Props = {};
 
 const Resume = (props: Props) => {
-  const [selected, setSelected] = useState(0);
-
   const experience = [
     {
       year: "2022",
@@ -59,7 +57,7 @@ const Resume = (props: Props) => {
         transition={{ duration: 0.25 }}
         variants={upAnimation}
         viewport={{ once: true }}
-        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-gray-600"
+        className="flex w-min text-white space-x-2 items-center px-4 py-2 border rounded-full border-solid border-neutral-600"
       >
         <Briefcase color="white" size={10} />
         <p className="text-xs font-light ">RESUME</p>
@@ -83,38 +81,28 @@ const Resume = (props: Props) => {
             variants={leftShiftAnimation}
             viewport={{ once: true }}
             key={index}
-            onClick={() => setSelected(index)}
           >
-            <div className="flex space-x-12 md:space-x-20">
+            <div className="flex space-x-12 md:space-x-20 group">
               <div className="flex flex-col items-center">
-                {index !== 0 && (
-                  <div className="w-[.25px] h-[7px] bg-gray-500" />
-                )}
                 <div
-                  className={`w-3 h-3 ${
-                    index === 0 && "mt-[7px]"
-                  } rounded-full ${
-                    selected === index ? "bg-th-primary-text" : "bg-gray-500"
-                  }`}
+                  className={`w-3 h-3 rounded-full group-hover:bg-th-primary-text bg-neutral-500`}
                 />
-                <div className="w-[.25px] h-full bg-gray-500" />
+                <div className="w-[.25px] h-full bg-neutral-500" />
               </div>
               <div className="flex w-auto flex-col justify-start space-y-4">
                 <p
-                  className={` ${
-                    selected === index
-                      ? "text-th-primary-text"
-                      : "text-gray-400"
-                  } font-light`}
+                  className={`group-hover:transition-colors group-hover:text-th-primary-text text-neutral-400 font-light -mt-[6px]`}
                 >
                   {exp.year}
                 </p>
                 {exp.roles.map((role, key) => (
                   <div key={key} className="flex flex-col space-y-1">
                     <p className="text-2xl font-light">{role.title} </p>
-                    <p className=" text-gray-400 font-light">{role.company}</p>
+                    <p className=" text-neutral-400 font-light">
+                      {role.company}
+                    </p>
                     {role.details && (
-                      <p className="text-gray-400 text-xs font-light">
+                      <p className="text-neutral-400 text-xs font-light">
                         {role.details}
                       </p>
                     )}
