@@ -3,8 +3,10 @@ import Sidebar from "@/components/Sidebar";
 import ThemeChange from "@/components/ThemeChange";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 import loadingLottie from "../images/loading.json";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 type Props = {};
 
@@ -29,9 +31,8 @@ const Index = (props: Props) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.0, delay: 2.0 }}
-        className={`${
-          loading ? "invisible" : "visible"
-        } lg:flex bg-[#1f1f1f] overflow-x-hidden`}
+        className={`${loading ? "invisible" : "visible"
+          } lg:flex bg-[#1f1f1f] overflow-x-hidden`}
       >
         <>
           {!showThemeChange ? (

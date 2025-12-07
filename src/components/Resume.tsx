@@ -8,15 +8,25 @@ type Props = {};
 const Resume = (props: Props) => {
   const experience = [
     {
+      year: "2025",
+      roles: [
+        {
+          title: "SDE II",
+          company: "Amazon",
+          details: "",
+        },
+      ],
+    },
+    {
       year: "2022",
       roles: [
         {
-          title: "Software Development Engineering Intern",
-          company: "Amazon.com",
+          title: "SDE Intern",
+          company: "Amazon",
           details: "",
         },
         {
-          title: "Cofounder & Full Stack Developer",
+          title: "Cofounder & Engineer",
           company: "Perch",
           details: "",
         },
@@ -31,7 +41,7 @@ const Resume = (props: Props) => {
           details: "",
         },
         {
-          title: "Cofounder & Frontend Developer",
+          title: "Cofounder & Engineer",
           company: "Hatch",
           details: "",
         },
